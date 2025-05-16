@@ -1,3 +1,14 @@
 "use strict" // treat all js code as newer version 
 
 // alert(3+3) we are using nodejs not browser 
+
+// Primite datatype
+
+// number , range : -(2^53-1) to (2 ^ 53 -1) , default val = 0 
+// string => "" , empty string default 
+// boolean 
+//null : standalone value *************** typeof null is object
+// undefined  *************** typeof null is undefined
+// symbol , used for uniquness 
+
+// console.log(typeof "hello") 
