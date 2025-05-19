@@ -23,7 +23,10 @@ let valueInNummber = Number(score)
 // console.log(typeof "")
 let booleanLoggedIn = Boolean (loggedIn)
 
-console.log(booleanLoggedIn) 
+// console.log(booleanLoggedIn) 
 
 // 1 => true ; 0 => false 
 // "" => false ; "govind" => true 
+
+// ******************* Operation ********************* // 
+
