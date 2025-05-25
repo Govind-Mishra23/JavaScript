@@ -2,6 +2,7 @@ function addNum (n1 , n2) {
     // console.log(Array.from(n))
     return n1+n2 
 }
+
 const sum = addNum(3,5) // 8 
 // addNum (3, 's')  // 3s 
 // addNum (5, "4") // 54 
