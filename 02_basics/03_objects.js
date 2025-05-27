@@ -28,13 +28,13 @@ const user2 = {
 
 // use as Symbol best approach for Symbol datatype as key  , use square braket in key or accesing both
 
-// let user3 = {
-//     name : "Govind" , 
-//     [mysym1] : "type of mysym1 is now Symbol"
-// }
-// console.log(user3.mysym1);
-// console.log(user3[mysym1]);
-// console.log(typeof user3[mysym1]);
+let user3 = {
+    name : "Govind" , 
+    [mysym1] : "type of mysym1 is now Symbol"
+}
+console.log(user3.mysym1); // undefined bcz cant access using dot operator 
+console.log(user3[mysym1]);
+console.log(typeof user3[mysym1]);
 
 const user4 = {
     name : "govind", 
@@ -49,17 +49,17 @@ const user4 = {
 // console.log(user4)
 
 // now declare function within user4 
-user4.loggedIn = false 
-user4.greeting = function (){
-    console.log("hello user4");
-}
-user4.greetingTwo = function () {
-    console.log(`hello  ${this.name}`)
-}
+// user4.loggedIn = false 
+// user4.greeting = function (){
+//     console.log("hello user4");
+// }
+// user4.greetingTwo = function () {
+//     console.log(`hello  ${this.name}`)
+// }
 
-console.log(user4.greeting());
-console.log(user4.greetingTwo())
-console.log(user4)
+// console.log(user4.greeting());
+// console.log(user4.greetingTwo())
+// console.log(user4)
 
 
 
