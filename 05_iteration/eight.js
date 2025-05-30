@@ -28,3 +28,4 @@ const shoppingCart = [
 
 const cartPrice = shoppingCart.reduce((acc, i) => acc+ i.price, 0) 
 console.log(cartPrice)
+
