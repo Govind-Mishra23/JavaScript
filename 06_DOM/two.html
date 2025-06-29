@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM </title>
+</head>
+<body style="background-color: rgba(0, 0, 0, 0.729); color : #ffffffbb">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+
+    <script>
+    const parent = document.querySelector('.parent')
+    // console.log(parent)
+    // console.log(typeof parent)  // return object
+    console.log(parent.children[0].innerHTML.toUpperCase()); // childern returns html collection, we can convert into array 
+    // for (let index = 0; index < parent.children.length; index++) {
+    //      console.log(parent.children[index].innerHTML.toUpperCase());   
+    // }
+    // console.log(parent.firstElementChild)
+    // console.log(parent.lastElementChild)
+
+    const dayOne = document.querySelector('.day')
+    console.log(dayOne)
+    console.log(dayOne.parentElement)
+    console.log(dayOne.nextElementSibling)
+
+    console.log("nodes" , parent.childNodes)
+
+</script>
+</body>
+
+</html>

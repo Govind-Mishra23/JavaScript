@@ -1,8 +1,4 @@
 // Primitve 
-
- 
-
-
 // 7 types : Number , String , Boolean , Null , Undefined , Symbol , BigInt 
 
 
