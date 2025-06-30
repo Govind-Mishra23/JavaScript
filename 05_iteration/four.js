@@ -10,8 +10,8 @@ const myObject = {
 for (const key in myObject){
     // console.log(key)
 
-   // console.log(myObject.key) // key is a variable, not the literal word "key"
-    // console.log(myObject[key]) // always use bracket notataion in iteration 
+//    console.log(myObject.key) // key is a variable, not the literal word "key"
+    console.log(myObject[key]) // always use bracket notataion in iteration 
 }
 
 // const programming = ["java", "javascript", "python", "ruby"]
@@ -30,5 +30,5 @@ map.set('US', "AMERICA")
 // console.log(map)
 for(const [key, value] in map){
     // console.log(key)
-    console.log(key + ":-" + value)
+    // console.log(key + ":-" + value)
 }

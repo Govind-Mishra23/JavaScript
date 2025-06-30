@@ -1,8 +1,14 @@
 const programming = ["java", "javascript", "python", "ruby"]
 
-// programming.forEach(function (language) {
-//     console.log(language)
-// })
+programming.forEach(function (language) {
+    console.log(language)
+})
+for(const lang of programming){
+    console.log(lang)
+}
+for(const lang in programming){
+    console.log(programming[lang]) ; 
+}
 
 
 // **** use arrow function 

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: rgba(0, 0, 0, 0.794); color: rgba(240, 248, 255, 0.738);">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+    function addList (langNam) {
+        const listEle = document.querySelector('.language') 
+        const liList = document.createElement('li')
+        // liList.append(langNam)
+        liList.innerHTML = langNam // traverse whole tree 
+
+        listEle.appendChild(liList)  
+    }
+    addList("python")
+    addList("c++")
+    addList("typescript")
+
+    function addOptLang (langName){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName)) // directly add text 
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptLang("java")
+
+    // Edit 
+    const secondLang = document.querySelector("li:nth-child(2)") 
+    // secondLang.innerHTML = "jongo" 
+
+    const newli = document.createElement('li')
+    newli.append( "jongo")
+
+    secondLang.replaceWith(newli)
+
+    // remove 
+    const lastEle = document.querySelector('li:last-child')
+    // lastEle.remove() 
+
+    // second method using removeChild() 
+    const parent = lastEle.parentElement ; 
+    parent.removeChild(lastEle)
+
+    document.body.remove()
+     
+
+</script>
+</html>
