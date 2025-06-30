@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body
+    style="
+      background-color: rgba(0, 0, 0, 0.742);
+      color: rgba(255, 255, 255, 0.541);
+    "
+  >
+    <h1>learning js</h1>
+    <button
+      id="stop"
+      style="
+        background-color: green;
+        color: white;
+        border: none;
+        width: 70px;
+        height: 40px;
+      "
+    >
+      Stop
+    </button>
+  </body>
+  <script>
+    // setTimeout(() => {
+    //     console.log("Govind")
+    // },2000)
+    // console.log("mishra")
+
+    const sayGovind = function () {
+      console.log("govind");
+    };
+    const changeHeading = function () {
+      document.querySelector("h1").innerHTML = "learning is the key";
+    };
+    const changeMe = setTimeout(changeHeading, 5000);
+    document.querySelector("#stop").addEventListener("click", function () {
+      console.log("stopped");
+      clearTimeout(changeMe);
+    });
+  </script>
+</html>
