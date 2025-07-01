@@ -26,21 +26,21 @@
 // })
 
 // parametric resolve access via then method 
-const promiseThree = new Promise(function(resolve, reject){
-    setTimeout(function(){
-        console.log("data has been sent")
-        resolve({username: "Chai", email: "chai@example.com"})
-    }, 1000)
-})
+// const promiseThree = new Promise(function(resolve, reject){
+//     setTimeout(function(){
+//         console.log("data has been sent")
+//         resolve({username: "Chai", email: "chai@example.com"})
+//     }, 1000)
+// })
 
-promiseThree.then(function(user){
-    console.log(user["email"]);
-    console.log(user.username)
-})
+// promiseThree.then(function(user){
+//     console.log(user["email"]);
+//     console.log(user.username)
+// })
 
 // const promiseFour = new Promise(function(resolve, reject){
 //     setTimeout(function(){
-//         let error = true
+//         let error = false
 //         if (!error) {
 //             resolve({username: "hitesh", password: "123"})
 //         } else {
@@ -53,11 +53,14 @@ promiseThree.then(function(user){
 //  .then((user) => {
 //     console.log(user);
 //     return user.username
-// }).then((username) => {
+// })
+// .then((username) => {
 //     console.log(username);
-// }).catch(function(error){
+// })
+// .catch(function(error){
 //     console.log(error);
-// }).finally(() => console.log("The promise is either resolved or rejected"))
+// })
+// .finally(() => console.log("The promise is either resolved or rejected"))
 
 
 
@@ -71,7 +74,7 @@ promiseThree.then(function(user){
 //         }
 //     }, 1000)
 // });
-
+//  asynchronous code allow to run in the background . It does not block the main thread , code can continue running while waiting things 
 // async function consumePromiseFive(){
 //     try {
 //         const response = await promiseFive
@@ -83,27 +86,31 @@ promiseThree.then(function(user){
 
 // consumePromiseFive()
 
+// async function with fetch object  
+
 // async function getAllUsers(){
 //     try {
 //         const response = await fetch('https://jsonplaceholder.typicode.com/users')
-
-//         const data = await response.json()
-//         console.log(data);
+//          await : wait until the Promise is resolved
+//         const data = await response.json() // .json() is a method of promise object to read data 
+//         console.log(data[0].address);
 //     } catch (error) {
 //         console.log("E: ", error);
 //     }
 // }
 
-//getAllUsers()
+// getAllUsers()
 
-// fetch('https://api.github.com/users/hiteshchoudhary')
-// .then((response) => {
-//     return response.json()
-// })
-// .then((data) => {
-//     console.log(data);
-// })
-// .catch((error) => console.log(error))
+// fetch object with then method 
+
+fetch('https://api.github.com/users/hiteshchoudhary')
+ .then((response)=>{
+    return response.json()  
+ }).then(function (data){
+    console.log(data["name"]) 
+ }).catch((error) =>{
+    console.log(error)
+ })
 
 // promise.all
 // yes this is also available, kuch reading aap b kro.
