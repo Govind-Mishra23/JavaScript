@@ -5,6 +5,16 @@ const myHeros = ["govind", "coding"]
 // console.log(typeof myArr2)
 // console.log(typeof myHeros); // object not Array 
 
+let arr = new Array(5) 
+let arr1 = Array.of(5)
+// console.log(arr1)
+// for(let i = 0 ; i<5; i++){
+//     // console.log(arr[i])
+//     console.log(arr1[i])
+// }
+// arr[3] = 5 ;
+// arr.forEach((x) => console.log(x)) ; 
+
 
 
 // Array Methods 

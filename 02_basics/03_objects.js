@@ -62,6 +62,18 @@ const user4 = {
 // console.log(user4)
 
 
+// let obj = new Object() ; 
+// obj.name = "alice" ;
+// // console.log(obj.name)
+// let obj2 = Object.create(obj) 
+// obj2.age = 30
+// for(let key in obj){
+//     console.log(obj.key)
+// }
+const arr = [1,2,3,5] 
+for(let idx in arr){
+    arr[idx]
+}
 
 
 
