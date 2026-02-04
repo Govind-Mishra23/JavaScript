@@ -16,3 +16,13 @@ console.log(a1 === a2)
 
 
 //  console.table([name, id, sub]) 
+
+// Creation Phase (Memory allocation / Hoisting phase)
+
+// Variables (var, let, const) and functions are allocated in memory.
+
+// var gets undefined.
+
+// let / const stay uninitialized (Temporal Dead Zone).
+
+// Functions are hoisted with their body.

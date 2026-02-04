@@ -1,12 +1,12 @@
 // create promises // promise is an object to represend fullfill rejected or pending states 
-// const promiseOne = new Promise(function(resolve, reject){
+const promiseOne = new Promise(function(resolve, reject){
     //Do an async task
-    // DB calls, cryptography, network
-//     setTimeout(function(){
-//         console.log('Async task is compelete');
-//         resolve() // use to build connection bw resolve and then if resolve method executed then, .then invoked  
-//     }, 2000)
-// })
+   // DB calls, cryptography, network
+    setTimeout(function(){
+        console.log('Async task is compelete');
+        resolve() // use to build connection bw resolve and then if resolve method executed then, .then invoked  
+    }, 2000)
+})
 
 // then is directed connection between resolve 
 // promiseOne.then(function(){

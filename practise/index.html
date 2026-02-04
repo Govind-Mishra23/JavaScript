@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function display(){
+            let name = document.getElementById("name").value;
+            let branch = document.getElementById("branch").value;
+            let skills = document.getElementById("skills").value;
+            let college = document.getElementById("college").value;
+            let university = document.getElementById("university").value;
+            document.getElementById("nameOutput").innerHTML = name ;
+            document.getElementById("branchOutput").innerHTML = branch ;
+            document.getElementById("skillsOutput").innerHTML = skills ;
+            document.getElementById("collegeOutput").innerHTML = college ;
+            document.getElementById("universityOutput").innerHTML = university ;
+            console.log(name, branch, skills, college, university);
+        }
+        
+    </script>
+</head>
+<body>
+    <form >
+        <label >Enter name : </label>
+        <input type="text" class="inputText"/>
+        <br>
+        <label>Enter branch : </label>
+        <input type="text" class="inputText"/>
+        <br>
+        <label>Enter Skills : </label>
+        <input type="text" class="inputText"/><br>
+
+        <label>Enter college : </label>
+        <input type="text" class="inputText"/><br>
+
+        <label>Enter university : </label>
+        <input type="text" class="inputText"/>
+        <br>
+        <button onclick="display()" type="button" >Display</button>
+    </form>
+    <div id="output">
+        <!-- <h1 id="nameOutput"></h1>
+        <h2 id="branchOutput"></h2>
+        <h2 id="skillsOutput"></h2>
+        <h2 id="collegeOutput"></h2>
+        <h2 id="universityOutput"></h2> -->
+    </div>
+    <!-- <script src="main.js" type="module"></script> -->
+</body>
+</html>
