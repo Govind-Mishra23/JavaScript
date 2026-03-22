@@ -28,5 +28,38 @@ let booleanLoggedIn = Boolean (loggedIn)
 // 1 => true ; 0 => false 
 // "" => false ; "govind" => true 
 
+// console.log([].toString())   // ""
+// console.log({}.toString())  // [object object] 
+
 // ******************* Operation ********************* // 
+
+//  type  coercion 
+// automatically converting one data type into another
+
+// If any operand is a string, + becomes string concatenation
+
+1 + 2 + "3"  // "33"
+"1" + 2 + 3  // "123" move left to right 
+
+// (- * / %) These operators force numeric conversion 
+
+"10" - 5    // 5
+"10" * 2    // 20
+"10" / 2    // 5
+
+Boolean([])   // true All objects are truthy
+Boolean({})   // true All objects are truthy
+Boolean("")   // false empty string is falsy 
+
+// Equality Coercion (== vs ===)
+// == → allows coercion (dangerous)
+// === → no coercion (safe)
+
+
+// JS follows this fixed coercion order for == 
+// Abstract Equality Algorithm (simplified)
+// If one side is Boolean → convert to Number
+// If one side is Object → convert to Primitive -> ""
+// If String vs Number → convert String → Number
+
 

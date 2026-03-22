@@ -4,7 +4,7 @@
 
 const arr = [1,2,3,4]
 for(const val of arr){
-    // console.log(val)
+    console.log(val)
 }
 const greetings = "hello world!"
 for(const charGreet of greetings){
@@ -28,6 +28,6 @@ const myObj = {
     game2 : "HERO"
 }
 
-for(const [key, value] of myObj){
-        console.log(key + ":-" + value)
-}
+// for(const [key, value] of myObj){
+        // console.log(key + ":-" + value)
+// }

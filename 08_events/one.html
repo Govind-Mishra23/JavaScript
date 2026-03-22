@@ -83,15 +83,16 @@
     // clientX, clientY, screenX, screenY
     // altkey, ctrlkey, shiftkey, keyCode
 
-    // document.getElementById('images').addEventListener('click', function(e){
-    //     console.log("clicked inside the ul");
-    // }, true)
-
+    document.getElementById('images').addEventListener('click', function(e){
+        console.log("clicked inside the ul");
+        console.log(e.height)
+    }, true)
+    // false is use in event bubbling mean event triggered or flow child to parent
     /// true is use to event capturing mean event triggerd or flow parent to child
 
     // document.getElementById('owl').addEventListener('click', function(e){
     //     console.log("owl clicked");
-    //     e.stopPropagation()
+    //     e.stopPropagation() // it is used to prevent the flow of event 
     // }, true)
 
     // bubbling : when third arg is false then event bubbling occurs mean triggered child to parent to stop bubbling use e.stopPropagation()
@@ -134,3 +135,22 @@
     //removeIt.parentNode.removeChild(removeIt)
   </script>
 </html>
+
+
+<!-- *** how event listenere is works  -->
+ <!-- addEventListener is a function passes callback function as argument -->
+
+1. Waiting phase (event loop is idle)
+JS continues executing other code
+Browser waits for user action
+Callback just sits in memory
+
+2. Event occurs (user clicks)
+Browser detects the click
+Creates an event object
+Pushes the callback into the task queue
+
+3. Callback execution
+Call stack is empty
+Event loop moves callback from queue → call stack
+Callback runs

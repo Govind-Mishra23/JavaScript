@@ -9,13 +9,11 @@ let arr = new Array(5)
 let arr1 = Array.of(5)
 // console.log(arr1)
 // for(let i = 0 ; i<5; i++){
-//     // console.log(arr[i])
+//     console.log(arr[i])
 //     console.log(arr1[i])
 // }
 // arr[3] = 5 ;
 // arr.forEach((x) => console.log(x)) ; 
-
-
 
 // Array Methods 
 // const newArr = myArr.join() // return string 
@@ -25,7 +23,7 @@ let arr1 = Array.of(5)
 // ***** slice splice ******** interview slice support negative start or end but splice or substring not 
 // console.log("a ", myArr)
 // const myn1 = myArr.slice(1,3)
-// console.log(myArr.slice(-4, 3))
+// console.log(myArr.slice(-4, 3)) 
 
 // console.log(myn1) 
 // console.log("b ", myArr) 

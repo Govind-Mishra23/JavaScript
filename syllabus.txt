@@ -1,0 +1,47 @@
+JavaScript (VERY IMPORTANT)
+
+Variables (var, let, const)
+
+Data types
+
+Operators
+
+Conditions & loops
+
+Functions
+
+Scope & closures
+
+Hoisting
+
+this keyword
+
+Arrays & objects
+
+Array methods (map, filter, reduce, forEach)
+
+String & Math methods
+
+Destructuring
+
+Spread & rest operators
+
+Template literals
+
+Callbacks
+
+Promises
+
+Async / Await
+
+Event loop
+
+Microtasks vs macrotasks
+
+Error handling
+
+Modules (import / export)
+
+DOM manipulation
+
+Browser APIs (localStorage, sessionStorage)

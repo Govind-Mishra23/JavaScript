@@ -104,7 +104,25 @@
 // }
 // show(); 
 
-console.log(this)
+// console.log(this)
+
+//  console.log(typeof ([] + {}));
+
+
+// console.log([] + {})
+
+
+console.log({} + []) 
+
+
+
+
+
+
+
+
+
+
 
 
 
