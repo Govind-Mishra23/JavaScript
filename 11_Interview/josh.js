@@ -32,8 +32,8 @@ console.log(+true); // 1
 console.log(!"JS"); // false
 
 
-console.log("Hello" || "World");// Returns the first truthy value If none are truthy, it returns the last falsy value
-console.log("" && "World"); // Returns the first falsy value If none are falsy, it returns the last truthy value
+console.log("Hello" || "World");// Returns the first truthy value.  If none are truthy, it returns the last falsy value.
+console.log("" && "World"); // Returns the first falsy value.  If none are falsy, it returns the last truthy value
 
 
 
