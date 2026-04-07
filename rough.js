@@ -112,8 +112,14 @@
 // console.log([] + {})
 
 
-console.log(this) 
-
+// console.log(this) 
+const p1 = Promise.reject("error"); 
+const p2 =  Promise.reject("error"); 
+const p3 =  Promise.reject("error"); 
+Promise.allSettled([p1, p2, p3])
+    .then(res => console.log(res))
+    .catch(e => console.log(e)); 
+  
 
 
 

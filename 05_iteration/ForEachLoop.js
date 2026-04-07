@@ -1,13 +1,19 @@
+// return undefined , passed a function inside it 
+// Iterates over each element
+// Executes a callback
+// Returns undefined always
+// forEach doesn’t support loop control like break / continue
+
 const programming = ["java", "javascript", "python", "ruby"]
 
 programming.forEach(function (language) {
-    console.log(language)
+   // console.log(language)
 })
 for(const lang of programming){
-    console.log(lang)
+  // console.log(lang)
 }
 for(const lang in programming){
-    console.log(programming[lang]) ; 
+   // console.log(programming[lang]) ; 
 }
 
 
@@ -44,6 +50,6 @@ const details = [
     }
 ]
 details.forEach((item) => {
-    // console.log(item.langName )
+    console.log(item.langName )
 })
 

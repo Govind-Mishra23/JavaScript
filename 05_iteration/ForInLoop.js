@@ -6,12 +6,15 @@ const myObject = {
 }
 // console.log(myObject.js)
 // console.log(myObject["js"])
+// const key = "js" 
+// console.log(myObject.key) // It does NOT use the value of the variable key so use
+// console.log(myObject[key]) // Now JavaScript evaluates key = "js" 
 
 for (const key in myObject){
     // console.log(key)
 
-//    console.log(myObject.key) // key is a variable, not the literal word "key"
-    console.log(myObject[key]) // always use bracket notataion in iteration 
+//   console.log(myObject.key) // key is a variable, not the literal word "key" find property named as "key" if not get then return undefined 
+   // console.log(myObject[key]) // always use bracket notataion in iteration 
 }
 
 // const programming = ["java", "javascript", "python", "ruby"]
@@ -31,4 +34,12 @@ map.set('US', "AMERICA")
 for(const [key, value] in map){
     // console.log(key)
     // console.log(key + ":-" + value)
+}
+
+
+
+// loop use in an array
+const arr = [3, 5, 6,2]
+for(const val in arr){
+    console.log(arr[val]) ;
 }
